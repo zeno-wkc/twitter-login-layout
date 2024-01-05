@@ -1,0 +1,28 @@
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/responsive-web/client-web/Chirp-Regular.80fda27a.woff2);
+}
+
+.footer {
+  padding: 12px 20px;
+  font-family: TwitterChirp, Helvetica, Arial, sans-serif;
+  color: rgb(113, 118, 123);
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+}
+
+.footer li {
+  display: inline-flex;
+  margin: 4px 0;
+  padding-right: 16px;
+  font-size: 13px;
+  background-color: rgba(0,0,0,0.00);
+}
+
+.footer li:last-child {
+  padding-right: 0;
+}
