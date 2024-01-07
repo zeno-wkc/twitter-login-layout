@@ -18,6 +18,10 @@
   background-color: rgba(0,0,0,0.00);
 }
 
+.footer li a:hover {
+  text-decoration: underline;
+}
+
 .footer li:last-child {
   padding-right: 0;
 }
