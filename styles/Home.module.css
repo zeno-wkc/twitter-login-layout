@@ -9,49 +9,58 @@
 
 .mainContainer {
   padding: 16px;
+  min-width: 45vw;
+  max-width: 600px;
 }
 
 .leftContainer {
   display: flex;
   justify-content: start;
   max-width: 100%;
-  padding: 20px;
+  padding: 20px 20px 0;
 }
 
 .rightContainer {
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
 .footerContainer {
-  background-color: black;
-}
-
-/* Enable hover only on non-touch devices */
-/*
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-}
-*/
-
-/* Mobile */
-@media (max-width: 700px) {
-
+  background-color: rgb(var(--black-color-style-rgb));
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 516px) and (max-width: 1016px) {
+  .mainContainer {
+    margin: 0 auto;
+  }
+}
 
+/* Desktop */
+@media (min-width: 1016px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .mainContainer {
+    flex-grow: 1;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  .leftContainer {
+    position: relative;
+    flex-grow: 1;
+    min-height: 45vh;
+    padding: 32px 16px 32px 0;
+    justify-content: center;
+  }
+
+  .rightContainer {
+    min-width: 45vw;
+    padding: 20px;
+  }
+
+  .footerContainer {
+    margin-top: auto;
+  }
 }
